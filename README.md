@@ -1,8 +1,9 @@
 Storiarc
 ========
 
-An Android app that assists journalists with note taking by conforming to the domain with special forms for quotes, notes,
-and deadline integration into Google Calendar.
+An Android app that assists journalists with note taking by conforming to the domain with special forms for quotes, notes, and deadline integration into Google Calendar.
+
+You can find the production version of Storiarc here: https://play.google.com/store/apps/details?id=com.storiarc.mobile&hl=en
 
 License
 ========
