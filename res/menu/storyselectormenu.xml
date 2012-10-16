@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+		android:id="@+id/storyselector_createstorymenubtn"
+		android:icon="@android:drawable/ic_menu_add"
+		android:title="@string/createstory" />
+    <item 
+		android:id="@+id/storyselector_settingsmenubtn"
+		android:icon="@android:drawable/ic_menu_preferences"
+		android:title="@string/storyselector_settings" />
+	<item 
+		android:id="@+id/storyselector_searchmenubtn"
+		android:icon="@android:drawable/ic_menu_search"
+		android:title="@string/storyselector_searchmenubtn" />	
+	<item 
+		android:id="@+id/storyselector_aboutmenubtn"
+		android:icon="@android:drawable/ic_menu_info_details"
+		android:title="@string/storyselector_aboutmenubtn" />
+</menu>

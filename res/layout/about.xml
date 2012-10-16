@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:paddingLeft="3dip"
+	android:paddingRight="3dip">
+	<ScrollView style="@style/scrollview">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent">
+		
+			<TextView style="@style/appnamelabel" />
+
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/about_exhortation"
+				android:textSize="15sp"
+				android:layout_margin="5dip"
+			/>
+			
+			<Button 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Give Feedback"
+				android:textSize="20sp"
+				android:layout_marginTop="10dip"
+				android:onClick="submitFeedback"
+			/>
+			
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Credits"
+				android:textSize="30sp"
+				android:layout_margin="5dip"
+			/>
+			
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/about_credit"
+				android:textSize="15sp"
+				android:layout_margin="5dip"
+				android:layout_marginTop="0dip"
+			/>
+			
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Legal"
+				android:textSize="30sp"
+				android:layout_margin="5dip"	
+			/>
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/about_shortlegal"
+				android:textSize="15sp"
+				android:layout_margin="5dip"
+			/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+

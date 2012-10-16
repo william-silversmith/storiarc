@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="appnamelabel">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">45sp</item>
+		<item name="android:text">@string/app_name</item>
+		<item name="android:typeface">serif</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:paddingBottom">5dip</item>
+	</style>
+
+	<style name="newsprint_listview" parent="newsprint">
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:cacheColorHint">#00000000</item>
+		<item name="android:dividerHeight">0.5dip</item>
+		<item name="android:background">@color/background</item>
+		<!--<item name="android:listSelector">@drawable/storyselectorlistitem</item>-->
+	</style>
+
+	<style name="newsprint">
+	</style>
+
+	<style name="textlistitem">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/description</item>
+		<item name="android:paddingLeft">6dip</item>
+	</style>
+
+	<style name="righttextlistitem" parent="textlistitem">
+		<item name="android:gravity">right|center_vertical</item>
+		<item name="android:layout_marginRight">10dip</item>
+	</style>
+	
+	<style name="rightbottomtextlistitem" parent="righttextlistitem">
+		<item name="android:layout_marginBottom">4dip</item>
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<style name="scrollview">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:fillViewport">true</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+
+	<!-- Story Selector -->
+	<style name="storytitle" parent="textlistitem">
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:paddingLeft">5dip</item>
+		<item name="android:textSize">23sp</item>
+		<item name="android:typeface">serif</item>
+		<item name="android:textColor">@color/title</item>
+	</style>
+	
+	<style name="storyselectoritem_description" parent="textlistitem">
+		<item name="android:textColor">@color/description</item>
+		<item name="android:textSize">17sp</item>
+		<item name="android:layout_marginBottom">4dip</item>
+	</style>
+	
+	<style name="storyselectoritem_deadline" parent="textlistitem">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">3dip</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/deadline</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:gravity">center_vertical</item>		
+	</style>
+	
+	<style name="storyselectoritem_completed" parent="textlistitem">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">3dip</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/completedtext</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:visibility">gone</item>
+		<item name="android:layout_toRightOf">@id/storyselector_deadline</item>
+		<item name="android:layout_alignTop">@id/storyselector_deadline</item>
+	</style>
+	
+	<!-- Overview -->
+	<style name="overview_listview" parent="newsprint_listview">
+		
+	</style>
+
+		<!-- Text Bar -->
+		<style name="overview_textbar_layout">
+			<item name="android:layout_width">fill_parent</item>
+			<item name="android:layout_height">wrap_content</item>
+			
+		</style>
+		
+		<style name="overview_textbar">
+			<item name="android:layout_width">fill_parent</item>
+			<item name="android:layout_height">fill_parent</item>
+			<item name="android:textColor">#ffffff</item>
+			<item name="android:background">@drawable/overviewtextbar</item>
+			<item name="android:textSize">17sp</item>
+			<item name="android:padding">3dip</item>
+			<item name="android:layout_marginBottom">13dip</item>			
+		</style>		
+
+		<!-- Overview Add Element -->
+		<style name="overview_elementcreator_layout">
+			<item name="android:paddingBottom">12dip</item>
+		</style>
+		
+		<style name="overview_elementcreator">
+			<item name="android:background">@drawable/elementcreatorbg</item>
+			<item name="android:layout_width">wrap_content</item>
+			<item name="android:layout_height">fill_parent</item>
+			<item name="android:orientation">vertical</item>
+			<item name="android:layout_centerHorizontal">true</item>
+		</style>
+		
+		<style name="overview_elementcreator_text" parent="overview_elementcreator_spacing">
+			<item name="android:layout_width">wrap_content</item>
+			<item name="android:layout_height">fill_parent</item>
+			<item name="android:gravity">center_vertical|center_horizontal</item>
+			<item name="android:textSize">15sp</item>
+			<item name="android:layout_weight">1</item>
+			<item name="android:textColor">@color/white</item>
+		</style>
+
+		<style name="overview_elementcreator_spacing">
+			<item name="android:paddingLeft">8dip</item>
+			<item name="android:paddingRight">8dip</item>		
+		</style>
+
+		<style name="overview_elementcreator_table">
+			<item name="android:layout_height">wrap_content</item>
+			<item name="android:layout_width">wrap_content</item>
+			<item name="android:layout_marginTop">10dip</item>
+			<item name="android:layout_marginBottom">2dip</item>
+		</style>
+
+		<style name="overview_elementcreator_imagebtn" parent="overview_elementcreator_spacing">
+			<item name="android:layout_height">35dip</item>
+			<item name="android:layout_width">wrap_content</item>
+		</style>
+		
+
+		<!-- Overview Meta -->
+		<style name="overview_meta_item" parent="textlistitem">
+			<!-- <item name="android:background">@drawable/metaelementbg</item> -->
+			<item name="android:orientation">vertical</item>
+			<item name="android:layout_width">fill_parent</item>
+			<item name="android:layout_height">wrap_content</item>
+			<item name="android:paddingBottom">3dip</item>
+			<item name="android:paddingLeft">0dip</item>
+		</style>
+
+		<style name="overview_meta" parent="textlistitem">
+			<item name="android:gravity">center_vertical</item>
+		</style>
+
+		<style name="overview_meta_title" parent="storytitle">
+			<item name="android:gravity">center_vertical|center_horizontal</item>
+			<item name="android:textSize">35sp</item>
+			<item name="android:paddingRight">5dip</item>
+		</style> 
+		
+		<style name="overview_meta_description" parent="overview_meta">
+			<item name="android:paddingLeft">30dip</item>
+			<item name="android:paddingRight">30dip</item>
+			<item name="android:paddingTop">10dip</item>
+			<item name="android:paddingBottom">10dip</item>
+			<item name="android:gravity">center_vertical|center_horizontal</item>
+			<item name="android:textSize">15sp</item>
+		</style>
+
+		<style name="overview_meta_deadline" parent="overview_meta">
+			<!-- <item name="android:textColor">@color/deadline</item> -->
+			<item name="android:textSize">15sp</item>
+			<item name="android:layout_marginTop">2dip</item>
+			<item name="android:layout_marginBottom">2dip</item>
+			<item name="android:textStyle">italic</item>
+			<item name="android:gravity">center_vertical|center_horizontal</item>
+		</style>
+		
+		<!-- Overview Note -->
+		<style name="overview_note" parent="textlistitem">
+			<item name="android:textSize">15sp</item>
+			<item name="android:gravity">center_vertical</item>
+			<item name="android:minHeight">35dip</item>
+			<item name="android:layout_marginTop">2dip</item>
+		</style>
+		
+		<style name="overview_note_meta" parent="rightbottomtextlistitem">
+			<item name="android:textColor">@color/aside</item>
+		</style>
+		
+		<!-- Overview Quote -->
+		<style name="quotetextlistitem" parent="textlistitem">
+			<item name="android:layout_marginBottom">4dip</item>
+		</style>
+		
+		<style name="overview_quote_item">
+			<item name="android:orientation">vertical</item>
+			<item name="android:layout_height">wrap_content</item>
+			<item name="android:layout_width">fill_parent</item>
+			<!--<item name="android:background">@color/quotehighlight</item>-->
+		</style>
+		
+		<style name="overview_quote_quote" parent="quotetextlistitem">
+			<item name="android:textSize">18sp</item>
+			<item name="android:layout_marginTop">2dip</item>
+			<item name="android:gravity">center_vertical</item>
+		</style>
+		
+		<style name="overview_quote_entity" parent="quotetextlistitem">
+			<item name="android:layout_marginLeft">30dip</item>
+		</style>
+		
+		<style name="overview_quote_context" parent="quotetextlistitem">
+			<item name="android:layout_marginTop">6dip</item>
+			<item name="android:gravity">center_vertical</item>
+		</style>
+		
+		<style name="overview_quote_meta" parent="rightbottomtextlistitem">
+			<item name="android:textColor">@color/aside</item>
+		</style>
+	
+	<!-- Editing Specific Parents -->
+
+	<style name="label" parent="textlistitem">
+		<item name="android:textColor">@color/label</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:textSize">25sp</item>
+		<item name="android:layout_marginTop">2dip</item>
+		<item name="android:layout_marginBottom">5dip</item>
+	</style>
+	
+	<style name="aboutelement" parent="textlistitem">
+		<item name="android:textColor">@color/label</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:visibility">gone</item>
+	</style>
+	
+	<style name="savebtn">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_marginTop">10dip</item>
+	 </style> 
+	
+	<style name="defaulttextedit">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:textSize">15sp</item>
+		<!-- <item name="android:autoLink">all</item> -->
+	</style>
+	
+	<style name="defaultmultilinetextedit" parent="defaulttextedit">
+		<item name="android:singleLine">false</item>
+		<item name="android:gravity">top</item>
+		<item name="android:inputType">textAutoCorrect|textMultiLine</item>		
+	</style>
+	
+	<style name="horizontallinelayout">
+		<item name="android:orientation">horizontal</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">fill_parent</item>		
+	</style>
+	
+	<!-- EditNote -->
+		
+	<style name="editnote" parent="defaulttextedit">
+		<item name="android:gravity">top</item>
+		<item name="android:inputType">textAutoCorrect|textMultiLine</item>
+		<item name="android:minLines">5</item>
+		<item name="android:maxLines">17</item>
+	</style>
+	
+	<!-- Edit Meta -->
+	
+	<style name="editmeta_edittitle" parent="defaulttextedit">
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:typeface">serif</item>
+		<item name="android:inputType">textAutoCorrect|textCapWords</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:textSize">17sp</item>
+	</style>
+	
+	<style name="editmeta_editdescription" parent="defaultmultilinetextedit">
+		<item name="android:minLines">2</item>
+	</style>
+	
+	<style name="editmeta_deadlinedisplay" parent="editquote_datetimetext">
+	</style>
+	
+	<style name="editmeta_btndeadlinelayout" parent="horizontallinelayout">
+		<item name="android:layout_marginTop">10dip</item>
+		<item name="android:layout_marginBottom">5dip</item>		
+	</style>
+	
+	<style name="editmetabtn">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:textSize">15sp</item>		
+		<item name="android:layout_marginLeft">2dip</item>
+	</style>
+	
+	<style name="editmeta_setdeadlinebtn" parent="editmetabtn">
+		<item name="android:gravity">center_vertical|center_horizontal</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	
+	<style name="editmeta_setnodeadlinebtn" parent="editmetabtn">
+		<item name="android:gravity">center_vertical|center_horizontal</item>
+		<item name="android:layout_weight">4</item>
+	</style>
+	
+	<style name="editmeta_settingsblock">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">fill_parent</item>	
+		<item name="android:visibility">gone</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+	
+	<style name="editmeta_settingcheckbox">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:paddingLeft">43dip</item>
+		<item name="android:layout_marginLeft">2dip</item>
+	</style>
+	
+	<!-- Edit Quote -->
+	
+	<style name="editquote_entityedit" parent="defaultmultilinetextedit">
+		<item name="android:maxLines">3</item>
+	</style>
+
+	<style name="editquote_noteedit" parent="defaultmultilinetextedit">
+		<item name="android:maxLines">5</item>
+	</style>
+	
+	<style name="editquote_datetimetext"> 
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:layout_marginLeft">7dip</item>
+		<item name="android:layout_marginBottom">6dip</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+	
+	<style name="editquote_datetimebtn">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_weight">2</item>	
+	</style>
+	
+	<!-- Search -->
+	
+	<style name="search_item">
+		<item name="android:background">@color/background</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">vertical</item>	
+	</style>
+	
+	<style name="searchtitle" parent="storytitle">
+		<item name="android:textColor">@color/searchtitle</item>
+	</style>
+	
+	<style name="infobar">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:background">@color/infobar</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:padding">10dip</item>
+	</style>
+	
+</resources>

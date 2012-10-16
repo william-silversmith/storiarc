@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/overview_meta_item">
+	<TextView style="@style/overview_meta_title"
+		android:id="@+id/overviewmeta_title" />
+	<TextView style="@style/overview_meta_deadline"
+		android:id="@+id/overviewmeta_deadline"/>	
+	<TextView style="@style/overview_meta_description"
+		android:id="@+id/overviewmeta_description" />		
+</LinearLayout>

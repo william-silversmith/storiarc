@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<ScrollView style="@style/scrollview">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<TextView style="@style/label"
+				android:id="@+id/editquote_entitylabel"
+				android:text="@string/editquote_entitylabel" 
+			/>
+			<AutoCompleteTextView style="@style/editquote_entityedit"
+				android:id="@+id/editquote_entityedit"
+				android:hint="@string/editquote_entityhint"
+			/>
+			<TextView style="@style/label"
+				android:id="@+id/editquote_notelabel"
+				android:text="@string/editquote_notelabel" 
+			/>	
+			<EditText style="@style/editquote_noteedit"
+				android:id="@+id/editquote_noteedit"
+				android:hint="@string/editquote_notehint"
+			/>	
+			<TextView style="@style/label"
+				android:id="@+id/editquote_datelabel"
+				android:text="@string/editquote_datelabel" 
+			/>
+			<TextView style="@style/editquote_datetimetext"
+				android:id="@+id/editquote_datetimetext"
+				android:text="@string/editquote_nodate" />
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp" >
+				
+				<Button	style="@style/editquote_datetimebtn"
+					android:id="@+id/editquote_datebtn"
+					android:onClick="onClickActivateDatePicker"
+					android:text="@string/editquote_datebtn" 
+				/>	
+				<Button style="@style/editquote_datetimebtn"
+					android:id="@+id/editquote_timebtn"
+					android:onClick="onClickActivateTimePicker"
+					android:text="@string/editquote_timebtn" 	
+				/>
+				<Button style="@style/editquote_datetimebtn"
+					android:id="@+id/editquote_unsetdatebtn"
+					android:onClick="onClickUnsetDate"
+					android:text="@string/editquote_unsetdatebtn" 	
+				/>
+			</LinearLayout>
+			<TextView style="@style/label"
+				android:id="@+id/editquote_contextlabel"
+				android:text="@string/editquote_contextlabel" 
+			/>	
+			<EditText style="@style/defaultmultilinetextedit"
+				android:id="@+id/editquote_contextedit"
+				android:hint="@string/editquote_contexthint"
+			/>		
+			
+			<!-- For future use -->
+			<TextView style="@style/label"
+				android:id="@+id/editquote_placelabel"
+				android:visibility="gone" 
+				android:text="@string/editquote_placelabel" />		
+			<!-- End future section -->
+			
+			<TextView style="@style/aboutelement"
+				android:id="@+id/editquote_created"
+				android:text="" 
+			/>
+			<TextView style="@style/aboutelement"
+				android:id="@+id/editquote_lastmodified"
+				android:text="" 
+			/>
+			<Button style="@style/savebtn"
+				android:id="@+id/editquote_savebtn"
+				android:text="@string/saveandcontinuebtn"
+				android:onClick="onClickSaveAndContinue"
+			/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+

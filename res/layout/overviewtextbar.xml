@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/overview_textbar_layout">
+	<TextView
+		android:id="@+id/overview_textbar"
+		android:text=" Story Details"
+		style="@style/overview_textbar" />
+</LinearLayout>

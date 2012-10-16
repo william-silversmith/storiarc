@@ -1,0 +1,62 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="first_preferencescreen">
+	<!--<PreferenceCategory android:title="@string/prefs_locationcategory">	
+		<CheckBoxPreference
+			android:key="allow collect location"
+			android:title="@string/prefs_updatelocationtitle"
+			android:summary="@string/prefs_updatelocationsummary" 
+			android:persistent="true" />
+	</PreferenceCategory> -->
+	<PreferenceCategory android:title="@string/prefs_googlecalendarcategory">	
+		<CheckBoxPreference
+			android:key="allow update calendar"
+			android:defaultValue="true"
+			android:title="@string/prefs_updatecalendar"
+			android:summary="@string/prefs_updatecalendarsummary" 
+			android:persistent="true" />
+	   <CheckBoxPreference
+			android:key="allow reminder calendar"
+			android:title="@string/prefs_calendarallowremindertitle"
+			android:summary="@string/prefs_calendarallowremindersummary"
+			android:persistent="true" />
+		<!-- List entries are set programatically in StoriarcPreferences -->
+	   <!-- <ListPreference
+			android:key="googleaccount"
+			android:dependency="allow update calendar"
+			android:title="@string/prefs_googleaccountlisttitle"
+			android:summary="@string/prefs_googleaccountlistsummary"
+			android:dialogTitle="@string/prefs_googleaccountlistdialogtitle"
+			android:persistent="true" />   
+			
+			android:dependency="googleaccount"-->
+	   <ListPreference
+			android:key="calendarid calendar"
+			android:title="@string/prefs_calendarlisttitle"
+			android:summary="@string/prefs_calendarlistsummary"
+			android:dialogTitle="@string/prefs_calendarlistdialogtitle" 
+			android:persistent="true" />
+	   <ListPreference
+			android:key="visibility calendar"
+			android:title="@string/prefs_calendarentryvisibilitytitle"
+			android:summary="@string/prefs_calendarentryvisibilitysummary"
+			android:dialogTitle="@string/prefs_calendarentryvisibilitydialogtitle"
+			android:entries="@array/prefs_calendarvisibility"
+			android:entryValues="@array/prefs_calendarvisibilityvalues" 
+			android:persistent="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/prefs_misccategory">
+		<CheckBoxPreference
+			android:key="show completed story"
+			android:title="@string/prefs_showcompletedstorytitle"
+			android:summary="@string/prefs_showcompletedstorysummary" 
+			android:defaultValue="true"
+			android:persistent="true" />
+		<!-- <CheckBoxPreference
+			android:key="allow tweet branding"
+			android:title="@string/prefs_tweetbrandingtitle"
+			android:summary="@string/prefs_tweetbrandingsummary" 
+			android:defaultValue="true"
+			android:persistent="true" />	-->
+	</PreferenceCategory>
+</PreferenceScreen> 

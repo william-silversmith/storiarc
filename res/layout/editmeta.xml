@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<ScrollView style="@style/scrollview"
+		android:id="@+id/editmeta_scrollview">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" >
+
+			<TextView style="@style/label"
+				android:text="@string/editmeta_titlelabel" 
+			/>
+			<EditText style="@style/editmeta_edittitle"
+				android:id="@+id/editmeta_edittitle"
+				android:hint="@string/editmeta_titleplaceholder" 
+			/>
+			<TextView style="@style/label"
+				android:text="@string/editmeta_descriptionlabel" 
+			/>
+			<EditText style="@style/editmeta_editdescription"
+				android:id="@+id/editmeta_editdescription"
+				android:hint="@string/editmeta_descriptionplaceholder"
+			/>
+			<TextView style="@style/label"
+				android:text="@string/editmeta_deadlinelabel" 
+			/>
+			<TextView style="@style/editmeta_deadlinedisplay"
+				android:id="@+id/editmeta_deadlinedisplay"
+				android:text="@string/editmeta_nodeadline"
+			/>
+			<LinearLayout style="@style/editmeta_btndeadlinelayout">
+				
+				<Button style="@style/editmeta_setdeadlinebtn"
+					android:id="@+id/editmeta_setdeadlinebtn"
+					android:text="@string/editmeta_setdeadlinebtn"
+					android:onClick="onClickActivateDatePicker"
+				/>
+				<Button style="@style/editmeta_setnodeadlinebtn"
+					android:id="@+id/editmeta_setnodeadlinebtn"
+					android:text="@string/editmeta_setnodeadlinebtn"
+					android:onClick="onClickNullifyDeadline"
+				/>
+			</LinearLayout>
+			
+			<LinearLayout style="@style/editmeta_settingsblock"
+				android:id="@+id/editmeta_settingsblock">
+				<TextView style="@style/label"
+					android:text="@string/editmeta_preferenceslabel"
+				/>
+				<CheckBox style="@style/editmeta_settingcheckbox"
+					android:id="@+id/editmeta_completedcheckbox"
+					android:text="@string/editmeta_completedcheckbox"
+					android:onClick="toggleCompletionStatus"
+				/>
+				<!-- To be possibly introduced - not sure -->
+			<!--
+				<CheckBox style="@style/editmeta_settingcheckbox"
+					android:id="@+id/editmeta_lockcheckbox"
+					android:text="Lock Changes"
+				/>
+			-->
+			</LinearLayout>
+			
+			<Button style="@style/savebtn"
+				android:id="@+id/editmeta_savebtn"
+				android:text="@string/saveandcontinuebtn"
+				android:onClick="onClickSaveAndContinue"
+				android:enabled="true"
+			/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

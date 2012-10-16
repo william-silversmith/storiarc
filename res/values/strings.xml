@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="packageroot">com.storiarc.mobile</string>
+
+	<!-- Activity Names -->
+    <string name="app_name">Storiarc</string>
+    <string name="storyselector_name">Storiarc | Select Story</string>
+	<string name="createstory">Create Story</string>
+	<string name="overview_name">Storiarc | Story Overview</string>
+	<string name="editmeta_name">Storiarc | Edit Story Info</string>
+	<string name="editnote_name">Storiarc | Edit Note</string>
+	<string name="editquote_name">Storiarc | Edit Quote</string>
+	<string name="storiarcpreferences_name">Storiarc | Preferences</string>
+	<string name="about_name">Storiarc | About</string>
+	<string name="search_name">Storiarc | Story Search</string>
+	
+	<!-- Cross Activity -->
+	<string name="untitledstory">Untitled Story</string>
+	<string name="nodescription">No description was provided.</string>
+	<string name="saveandcontinuebtn">Save &amp; Continue</string>
+
+	<string name="sendmenubtn">Send</string>
+	<string name="tweetmenubtn">Send Element</string>
+	<string name="sendemailbtn">Email Story</string>
+
+	<string name="sendemailwith">Send via:</string>
+
+		<!-- Preferences -->
+		<string name="prefs_locationcategory">Location</string>
+
+		<string name="prefs_updatelocationtitle">Update Location</string>
+		<string name="prefs_updatelocationsummary">Allow Storiarc attach your location to new story elements.</string>
+				
+		<string name="prefs_googlecalendarcategory">Google Calendar</string>
+		
+		<string name="prefs_updatecalendar">Update Google Calendar</string>
+		<string name="prefs_updatecalendarsummary">Allow Storiarc to add and remove deadlines from Google Calendar.</string>
+
+		<string name="prefs_calendarlisttitle">Select Google Calendar</string>
+		<string name="prefs_calendarlistsummary">Storiarc will update only the calendar you select.</string>
+		<string name="prefs_calendarlistdialogtitle">Select Google Calendar</string>
+
+		<string name="prefs_googleaccountlisttitle">Select Google Account</string>
+		<string name="prefs_googleaccountlistsummary">Your account determines the calendars available.</string>
+
+		<string name="prefs_calendarallowremindertitle">Allow Reminders</string>
+		<string name="prefs_calendarallowremindersummary">Determines if Google Calendar will alert you near deadlines.</string>
+
+		<string name="prefs_calendarentryvisibilitytitle">Privacy Level</string>
+		<string name="prefs_calendarentryvisibilitysummary">Determine who can see entries to your calendar.</string>
+		<string name="prefs_calendarentryvisibilitydialogtitle">Select Privacy Setting</string>
+		<string-array name="prefs_calendarvisibility">
+			<item>Default</item>
+			<item>Confidential</item>
+			<item>Private</item>
+			<item>Public</item>
+		</string-array>
+		<string-array name="prefs_calendarvisibilityvalues">
+			<item>0</item>
+			<item>1</item>
+			<item>2</item>
+			<item>3</item>
+		</string-array>
+	
+		<string name="prefs_misccategory">Miscellaneous</string>
+		<string name="prefs_showcompletedstorytitle">Show Completed Stories</string>
+		<string name="prefs_showcompletedstorysummary">Display completed stories in the main list. They will always be searchable.</string>
+		<string name="prefs_tweetbrandingtitle">Allow Storiarc Hashtag</string>
+		<string name="prefs_tweetbrandingsummary">Add #storiarc to Tweets.</string>
+	
+	<!-- Story Selector -->
+	<string name="storyselector_deadlinelabel">Deadline: </string>
+	<string name="storyselector_nodeadline">None</string>
+	<string name="storyselector_nostories">You haven\'t created any stories!</string>
+	<string name="storyselector_nostoriesbtn">Let\'s Get Started</string>
+	<string name="storyselector_settings">Settings</string>
+	<string name="storyselector_complete">Complete!</string>
+	<string name="storyselector_aboutmenubtn">About</string>
+	<string name="storyselector_searchmenubtn">Search</string>
+	
+		<!-- Context Menu -->
+		<string name="storyselectorcontextmenu_viewstory">View</string>
+		<string name="storyselectorcontextmenu_copy">Copy to Clipboard</string>
+		<string name="storyselectorcontextmenu_sendstory">Send</string>
+		<string name="storyselectorcontextmenu_deletestory">Delete</string>
+		<string name="storyselectorcontextmenu_editmeta">Edit</string>
+		
+	<!-- Overview -->
+	<string name="overview_noelements">There are no story parts!\nPress Menu and get going!</string>
+	<string name="overview_deleteelement">Delete this story element?</string>
+	<string name="overview_nodeadline">No assigned deadline</string>
+		
+		<!-- Context Menu -->
+		<string name="overviewcontextmenu_view">View / Edit</string>
+		<string name="overviewcontextmenu_tweet">Send Element</string>
+		<string name="overviewcontextmenu_copy">Copy to Clipboard</string>
+		<string name="overviewcontextmenu_delete">Delete</string>
+		<string name="overviewcontextmenu_editmeta">Edit</string>
+		
+		<!-- Overview Note -->
+		<string name="overviewnote_dateprefix">Last Modified</string>
+	
+		<!-- Overview Quote -->
+		<string name="overviewquote_noquote">. . .</string>
+		<string name="overviewquote_noentity">Anonymous</string>
+		<string name="overviewquote_nodate">Unspecified Date</string>
+		<string name="overviewquote_dateprefix">Quoted</string>
+		
+		<!-- Overview Story -->
+		<string name="overviewstory_nonotes">No notes have been created!</string>
+		<string name="overviewstory_noteheader">Notes</string>
+		<string name="overviewstory_imageheader">Images</string>
+
+	<string name="overview_addmenubtn">Create</string>
+		<string name="overview_addnotebtn">Note</string>
+		<string name="overview_addquotebtn">Quote</string>
+		<string name="overview_addimagebtn">Picture</string>
+		<string name="overview_addvideobtn">Video</string>
+		<string name="overview_addaudiobtn">Audio / Dictation</string>
+	<string name="overview_editmetabtn">Story Settings</string>
+	
+	<!-- Edit Meta -->
+	<string name="editmeta_titlelabel">Title</string>
+	<string name="editmeta_titleplaceholder">e.g. King Arthur Slays Fifty</string>
+	<string name="editmeta_descriptionlabel">Description</string>
+	<string name="editmeta_descriptionplaceholder">e.g. King in jealous rage over Guenevere</string>
+	<string name="editmeta_deadlinelabel">Deadline</string>
+	<string name="editmeta_nodeadline">None</string>
+	<string name="editmeta_setdeadlinebtn">Assign Deadline</string>
+	<string name="editmeta_setnodeadlinebtn">X</string>
+	<string name="editmeta_savebtn">Continue to Overview</string>
+	<string name="editmeta_completedcheckbox">Story Complete</string>
+	<string name="editmeta_preferenceslabel">Settings</string>
+	
+	<!-- Edit Note -->
+	<string name="editnote_notelabel">Note</string>
+	<string name="editnote_noteplaceholder">e.g. Lancelot\'s armor has lipstick stains.</string>
+	<string name="editnote_created">Created:</string>
+	<string name="editnote_lastmodified">Last Modified:</string>
+	<string name="editnote_saveandcontinue">Save &amp; Continue</string>
+	
+	<!-- Edit Quote -->
+	<string name="editquote_entitylabel">Who</string>
+	<string name="editquote_entityhint">e.g. Guenevere</string>
+	<string name="editquote_nodate">Unspecified</string>
+	<string name="editquote_notime"></string>
+	<string name="editquote_datebtn">Set Date</string>
+	<string name="editquote_timebtn">Set Time</string>
+	<string name="editquote_unsetdatebtn">X</string>
+	<string name="editquote_notelabel">Said</string>
+	<string name="editquote_datelabel">When</string>
+	<string name="editquote_notehint">e.g. I didn\'t say he killed them. No further comment.</string>
+	<string name="editquote_created">Created:</string>
+	<string name="editquote_lastmodified">Last Modified:</string>
+	<string name="editquote_placelabel">Where</string>
+	<string name="editquote_contextlabel">Context</string>
+	<string name="editquote_contexthint">e.g. She said as she sipped a tonic of hashish and gin.</string>
+	
+	<!-- Search -->
+	<string name="search_hint">Search stories</string>
+	<string name="search_noelements">No results were returned for this query.</string>
+	
+	<!-- Error Messages -->
+	<string name="externalstorage_nowrite">The external storage is not accessible. You will not be able to save pictures, video, or audio. This is most likely due to problems with your SD card.</string>
+	<string name="errormessageunderstood">Understood</string>
+	
+	<!-- Communiques -->
+	<string name="email_defaultsubject"></string>
+	<string name="email_footer">Compiled with Storiarc.</string>
+	
+	<!-- Confirm Save Dialog -->
+	<string name="confirmsave_positive">Save</string>
+	<string name="confirmsave_negative">Don\'t Save</string>
+	<string name="confirmsave_neutral">Stay Here</string>
+	<string name="confirmsave_message">Save your changes?</string>
+	
+	<!-- About Text -->
+	<string name="about_exhortation">Storiarc is intended to help journalists and writers of all kinds. Every bit of feedback helps you and your others in your discipline. I want to help you guys!</string>
+	<string name="about_credit">Thank you for doing what you do best!</string>
+	<string name="about_shortlegal">Source Code and Images &#169; 2012 William Silversmith. 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+	
+</resources>

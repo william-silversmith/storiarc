@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TextView style="@style/storytitle"
+		android:id="@+id/storytitle" />
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView style="@style/storyselectoritem_deadline"
+			android:id="@+id/storyselector_deadline"
+		/>
+		<TextView style="@style/storyselectoritem_completed"
+			android:id="@+id/storyselector_completed"
+			android:text="@string/storyselector_complete"
+		/>
+	</RelativeLayout>
+	<TextView 
+		android:id="@+id/storydescription"
+		style="@style/storyselectoritem_description"
+	/>
+	
+	<!-- Potentially a message area -->
+	
+</LinearLayout>
+

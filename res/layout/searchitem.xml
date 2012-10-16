@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/search_item">
+	<TextView
+		android:id="@+id/search_titleresult"
+		style="@style/searchtitle" />
+	<TextView
+		android:id="@+id/search_result"
+		style="@style/overview_note"/>
+	<TextView style="@style/overview_note_meta"
+		android:id="@+id/search_timestamp" />
+</LinearLayout>

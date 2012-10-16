@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/newsprint" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+			android:id="@+id/editnote_content"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+			android:layout_alignParentTop="true">		
+			<TextView style="@style/label"
+				android:text="@string/editnote_notelabel" 
+			/>
+			<EditText style="@style/editnote"
+				android:id="@+id/editnote_edit"
+				android:hint="@string/editnote_noteplaceholder"
+			/>
+			<TextView style="@style/aboutelement"
+				android:id="@+id/editnote_created"
+				android:text="" />
+			<TextView style="@style/aboutelement"
+ 				android:id="@+id/editnote_lastmodified"
+				android:text="" 
+			/>
+		</LinearLayout>
+		<Button style="@style/savebtn"
+			android:id="@+id/editnote_saveandcontinue"
+			android:text="@string/editnote_saveandcontinue"
+			android:onClick="onClickSaveAndContinue"
+			android:layout_below="@id/editnote_content"
+		/>
+	</RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/overview_elementcreator_layout" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+>
+	<LinearLayout style="@style/overview_elementcreator">
+		
+		<TableLayout style="@style/overview_elementcreator_table">
+			<TableRow>
+				<ImageView style="@style/overview_elementcreator_imagebtn"
+					android:id="@+id/overview_imgaddnotebtn"
+					android:src="@drawable/notebtnselector"
+					android:onClick="launchNote"
+				/>
+				<ImageView style="@style/overview_elementcreator_imagebtn"
+					android:id="@+id/overview_imgaddquotebtn"
+					android:src="@drawable/quotebtnselector"
+					android:onClick="launchQuote"
+				/>
+			</TableRow>
+			<TableRow>
+				<TextView 
+					style="@style/overview_elementcreator_text"
+					android:text="Note"
+				/>
+				<TextView 
+					style="@style/overview_elementcreator_text"
+					android:text="Quote"
+				/>		
+			</TableRow>
+			<!--<ImageView
+				android:id="@+id/overview_imgaddimagebtn"
+				android:layout_height="40dp"
+				android:layout_width="40dp"
+				android:src="@drawable/imagebtn"
+				android:onClick="addImage"
+				android:textSize="15sp"
+				android:paddingLeft="6dip"
+				android:layout_weight="1"
+			/>
+			<ImageView
+				android:id="@+id/overview_imgaddaudiobtn"
+				android:layout_height="40dp"
+				android:layout_width="40dp"
+				android:src="@drawable/audiobtn"
+				android:onClick=""
+				android:textSize="15sp"
+				android:paddingLeft="6dip"
+				android:layout_weight="1"
+			/>-->
+		</TableLayout>
+	</LinearLayout>
+</RelativeLayout>

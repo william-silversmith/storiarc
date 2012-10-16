@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffffff</color>
+
+	<color name="purple">#c0b0c8</color>
+
+    <color name="title">#1d1d1d</color>
+	<color name="description">#252525</color>
+	<color name="background">#ffffff</color>
+	<color name="deadline">#7b1a2f</color>
+	<color name="aside">#636363</color>	
+	
+	<color name="label">#f9f9f9</color>
+	<color name="applabelpurple">#632f99</color>
+	
+	<color name="escalated">#30ff6c00</color>
+	<color name="escalatedtext">#ffffff</color>
+	<color name="completedtext">#3b194d</color>
+	<color name="completed">#77c0b0c8</color>
+
+	<color name="quotehighlight">#ffffff</color>
+	
+	<color name="infobar">#a1cc37</color>
+	<color name="gradient">#6b9931</color>
+	<color name="searchtitle">#410c4e</color>	
+</resources>

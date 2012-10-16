@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+		android:id="@+id/overview_addmenubtn"
+		android:icon="@android:drawable/ic_menu_add"
+		android:title="@string/overview_addmenubtn">
+		   <menu>
+				<item android:id="@+id/overview_addnotebtn"
+					  android:title="@string/overview_addnotebtn" />
+				<item android:id="@+id/overview_addquotebtn"
+					  android:title="@string/overview_addquotebtn" />
+				<!--<item android:id="@+id/overview_addimagebtn"
+					  android:title="@string/overview_addimagebtn" />
+				<item android:id="@+id/overview_addvideobtn"
+					  android:title="@string/overview_addvideobtn" />
+				<item android:id="@+id/overview_addaudiobtn"
+					  android:title="@string/overview_addaudiobtn" /> -->
+			</menu>
+	</item>
+    <item android:id="@+id/overview_sendmenubtn"
+		android:icon="@android:drawable/ic_menu_send"
+		android:title="@string/sendmenubtn" />
+	<item 
+		android:id="@+id/overview_editmetabtn"
+		android:icon="@android:drawable/ic_menu_edit"
+		android:title="@string/overview_editmetabtn" />
+</menu>

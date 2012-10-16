@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/overview_quote_item" >
+	<!-- <ImageView 
+		android:id="@+id/overviewquote_background"
+		android:src="@drawable/quotebubble"
+		android:background="#ff0000"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"	/> -->
+	<TextView
+		android:id="@+id/overviewquote_quote"
+		style="@style/overview_quote_quote" />
+	<TextView
+		android:id="@+id/overviewquote_entity"
+		style="@style/overview_quote_entity" />
+	<TextView
+		android:id="@+id/overviewquote_context"
+		style="@style/overview_quote_context" />
+	<TextView
+		android:id="@+id/overviewquote_meta"
+		style="@style/overview_quote_meta" />
+</LinearLayout>
